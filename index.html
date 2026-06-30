@@ -66,8 +66,8 @@ h1,h2,h3,h4,h5{font-family:var(--ff-disp);font-weight:700;line-height:1.12;lette
 .intro{position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 40%,#fbf8fe,#f1e8fa);display:grid;place-items:center;
   transition:opacity .7s var(--ease),visibility .7s}
 .intro.done{opacity:0;visibility:hidden}
-.intro-mark{width:108px;height:108px;position:relative;animation:introPop .9s var(--ease) both}
-.intro-mark svg{width:100%;height:100%}
+.intro-mark{width:190px;position:relative;animation:introPop .9s var(--ease) both}
+.intro-mark svg,.intro-mark img{width:100%;height:auto;display:block}
 .intro-bar{position:absolute;left:50%;bottom:-34px;transform:translateX(-50%);width:120px;height:3px;
   background:var(--purple-100);border-radius:3px;overflow:hidden}
 .intro-bar i{position:absolute;inset:0;width:0;background:var(--purple);border-radius:3px;animation:introLoad 1.5s var(--ease) forwards}
@@ -85,7 +85,7 @@ h1,h2,h3,h4,h5{font-family:var(--ff-disp);font-weight:700;line-height:1.12;lette
   border:1px solid var(--line);border-radius:50px;box-shadow:var(--shadow-s);transition:all .4s var(--ease)}
 .nav.scrolled .nav-inner{margin-top:8px;box-shadow:0 14px 40px -20px rgba(70,41,92,.3);background:rgba(255,255,255,.9)}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.brand svg{height:40px;width:auto}
+.brand svg,.brand img{height:42px;width:auto;display:block}
 .navlinks{display:flex;gap:6px;margin-inline-start:auto}
 .navlinks a{position:relative;padding:8px 14px;border-radius:30px;font-size:14.5px;font-weight:600;color:var(--ink-2);
   transition:all .25s var(--ease)}
@@ -432,7 +432,7 @@ html[dir="rtl"] .contact-ltr{text-align:right}
 <!-- Intro -->
 <div class="intro" id="intro">
   <div class="intro-mark">
-    <svg viewBox="0 0 100 100" fill="none"><path d="M30 18h28a8 8 0 0 1 8 8v2h6a8 8 0 0 1 8 8v18a8 8 0 0 1-8 8H40l-6 6H30a8 8 0 0 1-8-8v-4h-2a8 8 0 0 1-8-8V34a8 8 0 0 1 8-8h2v-2a8 8 0 0 1 6-6Z" fill="#764897"/><rect x="34" y="34" width="32" height="32" rx="7" fill="#fff"/></svg>
+    <img src="media/logo.png" alt="SPG SPORT">
     <div class="intro-bar"><i></i></div>
   </div>
 </div>
@@ -444,7 +444,7 @@ html[dir="rtl"] .contact-ltr{text-align:right}
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="#top" aria-label="SPG SPORT">
-      <svg viewBox="0 0 300 92" xmlns="http://www.w3.org/2000/svg"><path d="M28 14h26a7 7 0 0 1 7 7v2h6a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7H38l-6 6h-4a7 7 0 0 1-7-7v-3h-2a7 7 0 0 1-7-7V31a7 7 0 0 1 7-7h2v-3a7 7 0 0 1 7-7Z" fill="#764897"/><rect x="31" y="29" width="29" height="29" rx="6" fill="#fff"/><text x="90" y="48" font-family="Saira,sans-serif" font-weight="800" font-size="40" fill="#764897" letter-spacing="1">SPG</text><text x="91" y="72" font-family="Saira,sans-serif" font-weight="600" font-size="20" fill="#764897" letter-spacing="6">SPORT</text></svg>
+      <img src="media/logo.png" alt="SPG SPORT">
     </a>
     <div class="navlinks" id="navlinks">
       <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
@@ -790,7 +790,7 @@ html[dir="rtl"] .contact-ltr{text-align:right}
   <div class="wrap">
     <div class="fgrid">
       <div class="fcol reveal">
-        <a class="brand" href="#top"><svg viewBox="0 0 300 92" xmlns="http://www.w3.org/2000/svg"><path d="M28 14h26a7 7 0 0 1 7 7v2h6a7 7 0 0 1 7 7v16a7 7 0 0 1-7 7H38l-6 6h-4a7 7 0 0 1-7-7v-3h-2a7 7 0 0 1-7-7V31a7 7 0 0 1 7-7h2v-3a7 7 0 0 1 7-7Z" fill="#764897"/><rect x="31" y="29" width="29" height="29" rx="6" fill="#fff"/><text x="90" y="48" font-family="Saira,sans-serif" font-weight="800" font-size="40" fill="#764897" letter-spacing="1">SPG</text><text x="91" y="72" font-family="Saira,sans-serif" font-weight="600" font-size="20" fill="#764897" letter-spacing="6">SPORT</text></svg></a>
+        <a class="brand" href="#top"><img src="media/logo.png" alt="SPG SPORT"></a>
         <p data-ar="العلامة السعودية الأولى والمفضّلة لعشّاق رياضة البادل تنس. فخامة، جودة، وثقة في كل مشروع." data-en="The first and favorite Saudi brand for padel tennis lovers. Luxury, quality and trust in every project.">العلامة السعودية الأولى والمفضّلة لعشّاق رياضة البادل تنس. فخامة، جودة، وثقة في كل مشروع.</p>
         <div class="socials">
           <a href="https://x.com/almasharee_a_g" target="_blank" rel="noopener" aria-label="X">𝕏</a>
